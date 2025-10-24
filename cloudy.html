@@ -17,23 +17,46 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="navbar">
-        <div class="container">
-          <div class="navbar-brand">Simple Weather Map 🌤</div>
-
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="#" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item"><a href="#" class="nav-link">Today</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Hourly</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">10Day</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Monthly</a></li>
-          </ul>
+    <div class="navbar">
+      <div class="container">
+        <div class="navbar-brand">Simple Weather Map 🌤</div>
+        <div class="search">
+          <label for="">
+            <input type="text" placeholder="City, Address, or Zipcode" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </label>
         </div>
       </div>
+    </div>
+    <div class="container">
+      <nav>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="" class="nav-link">Today</a>
+          </li>
+          <li class="nav-item"></li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Hourly</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Daily</a>
+          </li>
 
+          <li class="nav-item">
+            <a href="" class="nav-link">Monthly</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Air Quality</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Health & Activities</a>
+          </li>
+        </ul>
+      </nav>
+      <hr style="width: 80%; margin: auto" />
+    </div>
+
+    <div class="container">
       <div class="press">
         <h3>
           Click anywhere on the map to get the current weather
@@ -41,17 +64,18 @@
         </h3>
       </div>
 
-      <div
-        id="map"
-        style="height: 500px; border-radius: 10px; border: 1px solid"
-      ></div>
+      <div id="map" style="border-radius: 10px; border: 1px solid"></div>
 
       <div id="weatherData" class="weather-info"></div>
+
+      <div id="forecast-container" class="weather-forecast-container"></div>
     </div>
 
-    <div id="forecast-container" class="weather-forecast-container"></div>
-
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <div class="container">
+      <img src="assets/img/download (2).gif" alt="" />
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
